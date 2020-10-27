@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小U商城</title>
+    <!-- 引入icon图标 -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 引入矢量图标css文件 -->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body style="background-color: #fff;">
+  <div class="list-head" style="background-color: #f5f5f5;">
+     <!-- 版心 -->
+     <div class="inner">
+        <!-- 登录条 -->
+    <div class="login clearfix">
+        <!-- 登录条左边区域 -->
+        <div class="login-left fl">
+            <p>
+                <a href="#">网站导航</a><span class="iconfont icon-jiantou2"></span>
+            </p>
+            <p>
+                <a href="#">商家入驻</a><span class="iconfont icon-jiantou2"></span>
+            </p>
+            <p>
+                <a href="#">客户服务</a><span class="iconfont icon-jiantou2"></span>
+            </p>
+            <p style="margin-right: 0;">
+                <span class="iconfont icon-dingwei sp1"></span><a href="#">北京</a><span class="iconfont icon-jiantou1"></span>
+            </p>  
+        </div>
+        <!-- 登录条右边区域 -->
+        <div class="login-right fr">
+           <p><a href="#">请登录</a></p>
+           <p><a href="#" class="gs1">注册有礼</a></p>
+           <p>
+            <a href="#">我的订单</a>
+            <span class="iconfont icon-jiantou2"></span>
+           </p>
+           <p>
+            <a href="#">我的易购</a>
+            <span class="iconfont icon-jiantou2"></span>
+            </p>
+           <p><a href="#">小U会员</a></p>
+           <p>
+            <span class="iconfont icon-gouwuche sp2"></span><a href="#"  style="color:#f26600 ;">购物车 0</a>
+            <span class="iconfont icon-jiantou2"></span> 
+           </p>
+           <p><a href="#">易付宝</a></p>
+           <p><a href="#">企业采购</a></p>
+           <p><a href="#">手机小U</a><span class="iconfont icon-jiantou2"></span></p>
+
+        </div>
+       
+   </div>
+   <!-- 登录条完结 -->
+    </div>
+  </div>
+   <!-- 中间搜索区域及分类 -->
+   <div class="connter-nav">
+    <div class="inner">
+        <!-- 上边区域名称和区域文本框 -->
+        <div class="nav-top">
+            <h2><span>小U</span><img src="img/login-1_06.png" alt="">商城</h2>
+             <!-- 文本框 -->
+            <div class="input">
+                <input type="text" value="跨店每300减30"><button>搜索</button>
+                <span class="iconfont icon-sousuo"></span>
+            </div>
+            <p id="fen"></p> 
+        </div>
+        <!-- 上边区域结束 -->
+        <!-- 下边区域导航及区域分类 -->
+        <div class="nav-bottom clearfix">
+            <!-- 导航条目录 -->
+           <div class="menu fl">
+               <span class="iconfont icon-fenlei"> <a href="#"> 全部商品分类</a></span>
+               <!-- 精细导航栏 -->
+               <div class="menv-nav fl"></div>
+           </div>
+            <!-- 导航栏旁边字 -->
+            <div class="nav-font fl">
+                <a href="#">限实抢购</a>
+                <a href="#">红孩子</a>
+                <a href="#">小u超市</a>
+                <a href="#">电器城</a>
+                <a href="#">生活家电</a>
+                <a href="#">时尚服饰</a>
+                <a href="#">经融</a>
+            </div>
+        </div>
+    </div>
+   </div>
+<!-- 中间搜索区域完成 -->
+<hr color="#ed6d12" style="height: 2px;background-color: #ed6d12;">
+<!-- 商品导航区域 -->
+<div class="inner">
+    <div class="list-nav">
+        <p>
+        <a href="#">首页<a><span>></span><a href="#">家用电器<a><span>></span>
+            <span class="p-span">年份季节：2020年春季×</span>
+        </p>
+        <dl class="clearfix dl-one" id="first"></dl>
+        <dl class="clearfix dl-two" id="second"></dl>
+        <dl class="clearfix dl-3 d-three" id="thired"></dl>
+
+    </div>
+    <!-- 商品推荐区域 -->
+    <div class="list-conter clearfix">
+        <div class="conter-left fl" id="show"></div>
+        
+        <div class="conter-right fr">
+            <div class="right-head clearfix">
+                <div class="right-head-left fl">
+                   <p style="color: #ff002d;">综合</p>
+                   <p>新品</p>
+                   <p>销量 <img src="img/shang_03.png" alt=""> </p>
+                   <p style="border-right: 0;">价格<img src="img/shang_05.png" alt=""></p>
+                </div>
+                <div class="right-head-you fr">
+                    <p>
+                        共614件商品
+                        <span class="zj">&lt</span>
+                        <span class="you-one">1</span>
+                        <span>/11</span>
+                        <span class="yj">&gt</span>
+                    </p>
+                </div>
+            </div>
+            <div id="main"></div>
+        </div>
+   
+    </div>
+      <!-- 底部页面跳转区域 -->
+      <div class="num">
+        <a href="#" class="num-sp4">上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>.....
+        <a href="#" class="num-sp4">下一页</a>
+     </div> 
+</div>
+<!-- 页面底部 -->
+<div class="footer">
+    <div class="inner">
+            <dl class="dl-1 fl">
+                 <dt><a href="#">购物指南</a></dt>
+                 <dd><a href="#">购物流程</a></dd>
+                 <dd><a href="#">支付方式</a></dd>
+                 <dd><a href="#">配送方式</a></dd>
+             </dl>
+             <dl class="dl-2 d-one fl">
+                 <dt><a href="#">售后服务</a></dt>
+                 <dd><a href="#">售后政策</a></dd>
+                 <dd><a href="#">价格保护</a></dd>
+                 <dd><a href="#">退款说明</a></dd>
+                 <dd><a href="#">返修/退货换</a></dd>
+                 <dd><a href="#">取消订</a></dd>
+             </dl>
+             <dl class="dl-2 d-two fl">
+                 <dt><a href="#">配送方式</a></dt>
+                 <dd><a href="#">上门自提</a></dd>
+                 <dd><a href="#">211限时达</a></dd>
+                 <dd><a href="#">配送服务查询</a></dd>
+                 <dd><a href="#">配送费收取标准</a></dd>
+                 <dd><a href="#">海外配送</a></dd>
+             </dl>
+             <dl class="dl-2 d-three fl">
+                 <dt><a href="#">支付方式</a></dt>
+                 <dd><a href="#">网上支付</a></dd>
+                 <dd><a href="#">支付宝支付</a></dd>
+                 <dd><a href="#">邮政汇款</a></dd>
+             </dl>
+             <dl class="dl-2 d-four fl">
+                 <dt><a href="#">用户帮助</a></dt>
+                 <dd><a href="#">免费注册</a></dd>
+                 <dd><a href="#">找回密码</a></dd>
+                 <dd><a href="#">常见问题</a></dd>
+                 <dd><a href="#">优惠券使用</a></dd>
+             </dl>
+
+    </div>
+    <hr width=99% color="#3f3f3f">
+    <p class="p1">Copyright @ 2010~2016 小U商城 版权所有 保留一切权利</p>
+    <p>京ICP备10218183号 京ICP证1611886号 京公网安备11010802020593号 出版物经营许可证新出发京批字第直130052号</p>
+</div>
+<!-- 一级分类 -->
+<script type="text/html" id="nav_first">
+    <dt class="fl tvt"> <a href="#">>一级分类</a></dt>
+    {{each data}}
+    <dd class="fl hui" data-id={{$value.first_id}}><a href="javascript:;" class={{$index===activeIndex? "active": ""}}>{{$value.first_name}}</a></dd>
+    {{/each}}
+    <dd class="fr geng"><a href="javascript:;">更多</a><span class="iconfont icon-jiantou2"></span></dd>
+</script>
+<!-- 二级分类 -->
+<script type="text/html" id="nav_second">
+    <dt class="fl tvt"> <a href="#">>二级分类</a></dt>
+    {{each data}}
+    <dd class="fl hui" data-id={{$value.second_id}}><a href="javascript:;" class={{$index===activeIndex? "active": ""}}>{{$value.second_name}}</a></dd>
+    {{/each}}
+    <dd class="fr geng"><a href="javascript:;">更多</a><span class="iconfont icon-jiantou2"></span></dd>
+</script>
+<!-- 三级分类 -->
+<script type="text/html" id="nav_third">
+    <dt class="fl tvt"> <a href="#">>三级分类</a></dt>
+    {{each data}}
+    <dd class="fl hui" data-id={{$value.thired_id}}><a href="javascript:;" class={{$index===activeIndex? "active": ""}}>{{$value.thired_name}}</a></dd>
+    {{/each}}
+    <dd class="fr geng"><a href="javascript:;">更多</a><span class="iconfont icon-jiantou2"></span></dd>
+</script>
+<!-- 列表排序 -->
+<script type="text/html" id="nav_list">
+    {{each data}}
+    <div class="right-nr fl">
+        <img src={{$value.image_url}} width="182" height="120">
+        <p class="nr-font-1">￥{{$value.goods_price}}</p>
+        <p class="nr-font-2">{{$value.goods_name}}</p>
+        <p class="nr-font-3">不要错过，不要辜负</p>
+        <p class="nr-font-4">已有<span>{{$value.evalNum}}万+</span>评价</p>
+        <div class="jr">
+            <p>
+                 <span class="iconfont icon-gouwuche"></span>
+                 <a href="">加入购物车</a> 
+            </p>
+            <p style="border-right: 0;">
+                <img src="img/xin_03.png" alt="">
+                 <a href="#">收藏</a> 
+            </p>
+           
+        </div>
+    </div>
+    {{/each}}
+</script>
+<!-- 精细导航栏 -->
+<script type="text/html" id="jin_nav">
+    {{each data}}
+   <a href="#">{{$value.second_name}}&nbsp;|</a>
+    {{/each}}
+</script>
+<!-- 搜索框下边内容 -->
+<script type="text/html" id="fen_cont">
+    {{each data}}
+    <a href="#">{{$value.search_text}}</a>
+    {{/each}}
+</script>
+<!-- 橱窗信息 -->
+<script type="text/html" id="showwindo">
+    {{each data}}
+    <div class="left-1">
+        <img src={{$value.image_url}} alt="">
+        <p class="hai">海信(Hisense)</p>
+        <p>{{$value.goods_name}}</p>
+        <p class="money">￥{{$value.goods_price}}</p>
+    </div>
+    {{/each}}
+</script>
+<script src="./utils/myajax.js"></script>
+<script src="./utils/art-template.js"></script>
+<script src="./utils/jquery.js"></script>
+<script src="./js/list.js"></script>
+</body>
+</html>

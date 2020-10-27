@@ -1,0 +1,126 @@
+{
+    "code": 200,
+    "msg": "成功",
+    "result": {
+        "data": [
+            {
+                "8015e8de-d52d-457d-86f4-6e0c129b1ad2": [
+                    {
+                        "id": 1,
+                        "flash_id": "8015e8de-d52d-457d-86f4-6e0c129b1ad2",
+                        "goods_id": "1300435150060100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACW1s91F-ANw1CAADqAEfOePM979.jpg",
+                        "goods_name": "中腰八分喇叭裤77B1722050",
+                        "goods_price": 249,
+                        "assem_price": 155.63
+                    },
+                    {
+                        "id": 1,
+                        "flash_id": "8015e8de-d52d-457d-86f4-6e0c129b1ad2",
+                        "goods_id": "1302765005000900001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACW1wmG5-AIrv0AAFC6WERjFk874.jpg",
+                        "goods_name": "幸福小伴红枣膳食纤维蜂蜜蛋糕1000g",
+                        "goods_price": 58,
+                        "assem_price": 36.25
+                    },
+                    {
+                        "id": 1,
+                        "flash_id": "8015e8de-d52d-457d-86f4-6e0c129b1ad2",
+                        "goods_id": "1301775374010100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACW1wR8fSABiL9AAF1A_YO-Pk089.jpg",
+                        "goods_name": "女士百搭毛呢A字短半裙SC88218C",
+                        "goods_price": 249,
+                        "assem_price": 155.63
+                    },
+                    {
+                        "id": 1,
+                        "flash_id": "8015e8de-d52d-457d-86f4-6e0c129b1ad2",
+                        "goods_id": "1300435230060100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACYVoAGgqAXaeNAABinDpBheM774.jpg",
+                        "goods_name": "加绒弹力仿牛仔紧身小黑裤77B1742030",
+                        "goods_price": 299,
+                        "assem_price": 0
+                    },
+                    {
+                        "id": 1,
+                        "flash_id": "8015e8de-d52d-457d-86f4-6e0c129b1ad2",
+                        "goods_id": "1301565138010100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACYVsRAxSAOno_AAFPikIZ4OU829.jpg",
+                        "goods_name": "140S/3丝光珠地提花扁机领男士短袖POLO衫 BYA18S-043",
+                        "goods_price": 279,
+                        "assem_price": 174.38
+                    },
+                    {
+                        "id": 1,
+                        "flash_id": "8015e8de-d52d-457d-86f4-6e0c129b1ad2",
+                        "goods_id": "1300905162080100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACVFmfk62AGcZjAAF0MyWBxZs906.jpg",
+                        "goods_name": "基础百搭蕾丝拼接衬衫-由美",
+                        "goods_price": 329,
+                        "assem_price": 0
+                    }
+                ],
+                "time": 20
+            },
+            {
+                "6c547d64-5432-46d1-b08b-a24c87e330cf": [
+                    {
+                        "id": 2,
+                        "flash_id": "6c547d64-5432-46d1-b08b-a24c87e330cf",
+                        "goods_id": "1301815291010100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACVFvaXWaAfq66AAB5TvgufVw915.jpg",
+                        "goods_name": "连帽毛领双面呢大衣",
+                        "goods_price": 999,
+                        "assem_price": 624.38
+                    },
+                    {
+                        "id": 2,
+                        "flash_id": "6c547d64-5432-46d1-b08b-a24c87e330cf",
+                        "goods_id": "1300495198000100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACYVq4YV-AF508AAFhwUwH_vY072.jpg",
+                        "goods_name": "尚简扶手沙发床",
+                        "goods_price": 2499,
+                        "assem_price": 1561.88
+                    },
+                    {
+                        "id": 2,
+                        "flash_id": "6c547d64-5432-46d1-b08b-a24c87e330cf",
+                        "goods_id": "1301065684010100001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACVFv7plGARNi_AACLFL2TtS4383.jpg",
+                        "goods_name": "女款棉莫代尔混纺打底长T JNY1800",
+                        "goods_price": 119,
+                        "assem_price": 0
+                    },
+                    {
+                        "id": 2,
+                        "flash_id": "6c547d64-5432-46d1-b08b-a24c87e330cf",
+                        "goods_id": "1300455092010200001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACW1uDjm-AKP5HAAFeVXBeJfg929.jpg",
+                        "goods_name": "深V松紧带马丁靴 CM162",
+                        "goods_price": 499,
+                        "assem_price": 0
+                    },
+                    {
+                        "id": 2,
+                        "flash_id": "6c547d64-5432-46d1-b08b-a24c87e330cf",
+                        "goods_id": "1301185106010000001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACW1tajJiAPkM5AAGL8lo4zRg709.jpg",
+                        "goods_name": "蓝甘菊舒缓保湿补水滋润修护霜",
+                        "goods_price": 89,
+                        "assem_price": 0
+                    },
+                    {
+                        "id": 2,
+                        "flash_id": "6c547d64-5432-46d1-b08b-a24c87e330cf",
+                        "goods_id": "1301545279060000001",
+                        "image_url": "http://localhost:4005/image_source/goods_loop_img/rBACVFwHRSyAO3jnAAEs9Ed7MB0250.jpg",
+                        "goods_name": "朱泥茄段壶紫砂壶",
+                        "goods_price": 359,
+                        "assem_price": 0
+                    }
+                ],
+                "time": 21
+            }
+        ]
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小u商城</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="./utils/jquery.js"></script>
+</head>
+<body>
+    <div class="wrop-head">
+        <div class="inner clearfix">
+            <h1 class="logo">
+            <a href="#" title="小u商城"></a>
+            <p><span></span><a href="#">欢迎注册</a></p>
+            </h1> 
+        </div>
+        <!-- 表单界面 -->
+    <div class="wrop">
+        <div class="inner">
+        <form action="javascript:;">
+            <h2>注册账号</h2>
+            <h4 class="h4">
+                <p class="p1"><span class="iconfont icon-xinfeng"></span></p><input type="text" placeholder="请输入邮箱" name="uname">
+                <p class="phocl">请输入邮箱/邮箱已注册/邮箱格式错误</p>
+            </h4>
+            <h4>
+                <p class="p2"><span class="iconfont icon-suo"></span></p><input type="password" placeholder="密码" name="pwd">
+                <p class="phocl">请输入密码/密码格式为6-20位字母数组组合</p>
+            </h4>
+            <h4 class="pas">
+                <input type="text" placeholder="验证码" name="code"><img src="http://localhost:4005/user/captcha" id="i">
+                <p class="phocl">请输入验证码</p>
+            </h4>
+            <button id="sub">注册</button>
+            <p class="deng">已有账号 <a href="./login.html" target="_blank">去登陆</a> </p>
+        </form>
+        </div>
+       
+    </div>
+    <div class="di">
+        <p>Copyright @ 2010~2016 小U商城 版权所有 保留一切权利</p>
+        <p>京ICP备10218183号 京ICP证1611886号 京公网安备11010802020593号 出版物经营许可证新出发京批字第直130052号</p>
+    </div>
+    <script>
+         $("#i").click(function(){
+                this.src=`http://localhost:4005/user/captcha?id=${new Date().getTime()}`
+            })
+        $("#sub").click(function(){  
+            // 用ajax请求出来3004端口下register中的内容
+            $.ajax({
+                type:"post",
+                url:"http://localhost:4005/user/register",
+                data:{
+                    uname:$("[name=uname").val(),
+                    // 相当于：let uname=$("[name=uname").val()
+                    pwd:$("[name=pwd]").val(),
+                    code:$("[name=code]").val()
+                    // 向后端传入val的值
+                },
+                xhrFields:{
+                     //允许携带session进入
+                     withCredentials: true
+                },
+                success:function(response){
+                    if(response.code){
+                        alert(response.msg)
+                    }else{
+                        location.href='./login.html'
+                    }
+                }
+            })
+    })
+    </script>
+<!-- <script>
+    // var pat=/^\w{4,8}@[0-9a-zA-Z]{4,6}[.](com|com.cn)$/
+    // function em(){
+    //     var in_val=$(":text:first").val()
+    //     if(in_val==""){
+    //         alert("邮箱不能为空")
+    //         return false
+    //     }else if(pat.exec(in_val)==null){
+    //         alert("开头可以是数字、字母、下划线")
+    //         return false
+    //     }else{
+    //         return true
+    //     } 
+    // }
+    // var pat1=/[0-9a-zA-Z]{6,20}/
+    // function pass(){
+    //     var pas_val=$(":password").val()
+    //     if(pas_val==""){
+    //         alert("密码不能为空")
+    //         return false
+    //     }else if(pat1.exec(pas_val)==null){
+    //         alert("长度为6-20的数字字母组合")
+    //         return false
+    //     }
+    //     return true
+    // }
+    // var random=""
+    // function yan(max,min){
+    //    return Math.floor(Math.random()*(max-min))+min
+    // }
+    // $("#i").click(function(){
+    //     random=yan(1000,9999);
+    //     $("#i").text(random)
+    // })
+    // $("#i").text(yan(1000,9999));
+    // function yan1(){
+    //     var in_two=$(":text:last").val()
+    //     console.log(in_two)
+    //     if(in_two!=$("#i").text()){
+    //         alert("验证码不正确")
+    //         return false
+    //     }else{
+    //         alert("验证正确")
+    //     }
+    //     return true
+    // }
+
+
+    // $("button").click(function(){
+    //     if(em() && pass() && yan1()){
+    //         alert("注册成功")
+    //         return true
+    //     }else{
+    //         return false
+    //     }
+    // })
+</script> -->
+</body>
+</html>

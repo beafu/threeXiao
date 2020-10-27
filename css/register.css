@@ -1,0 +1,158 @@
+@charset "utf-8";
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrop-head .inner .logo{
+    height: 108px;
+    line-height: 108px;
+}
+.wrop-head .inner .logo>a {
+    display: block;
+    width: 209px;
+    height: 56px;
+    background: url("../img/log_03.png") no-repeat;
+    float: left;
+    margin-top: 30px;
+}
+.wrop-head .inner .logo>p{
+    float: left;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+.wrop-head .inner .logo p a{
+    vertical-align: middle;
+}
+.wrop-head .inner .logo p span{
+    margin: 0 22px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 48px;
+    background-color: #5e5e5e;
+    margin-top: 14px;
+}
+/* 表单界面 */
+.wrop{
+    overflow: hidden;
+    height: 554px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.wrop form{
+    width: 750px;
+    height: 476px;
+    background-color: #fff;
+    border-top: 3px solid #ed6d12;
+    margin: 35px auto;
+}
+.wrop form .h4 .p1{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #fff5f6;
+    border: 1px solid #f36d14;
+    vertical-align: middle;
+}
+.wrop form .h4 .p1 span{
+    margin-left: 9px;
+    color: #f36d14;
+}
+.wrop form .h4{
+    margin-top: 25px;
+}
+.wrop form .h4 input[type="text"]{
+    height: 34px;
+    width:341px;
+    line-height: 34px;
+    border: 1px solid #f36d14;
+    border-left: 0;
+    vertical-align: middle;
+    color: #9e9e9e;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.wrop form input[type="password"]{
+    height: 34px;
+    width: 341px;
+    line-height: 34px;
+    border: 1px solid #bfbfbf;
+    border-left: 0;
+    vertical-align: middle;
+    color: #9e9e9e;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.wrop form .p2{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: #f7f7f7;
+    line-height: 34px;
+    border: 1px solid #bfbfbf;
+    vertical-align: middle;
+}
+.wrop form .p2 span{
+    margin-left: 9px;
+    color: #bfbfbf;
+}
+.wrop form h4{
+    margin-left: 183px;
+    margin-top: 14px;
+}
+.wrop h2{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 26px;
+    color: #1f1f1f;
+    font-size: 22px;
+    text-align: center;
+}
+.wrop form .pas input[type="text"]{
+    width: 206px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    border: 1px solid #bfbfbf;
+}
+.wrop form .pas #i{
+    display: inline-block;
+    font-size: 26px;
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+.wrop .phocl{
+    font-size: 12px;
+    color: #ea7a28;
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+button{
+    margin-left: 183px;
+    margin-top: 24px;
+    width: 384px;
+    height: 40px;
+    background-color: #f26b11;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+}
+form .deng{
+    text-align: center;
+    margin-top: 35px;
+    color: #383838;
+    font-size: 12px;
+}
+form .deng a{
+    color: #e46f43;
+}
+.di{
+    padding: 35px 0 42px 0;
+}
+.di p{
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #656565;
+}

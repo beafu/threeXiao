@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小u商城</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="./utils/jquery.js"></script>
+</head>
+<body>       
+        <div class="wrop-head">
+            <div class="inner clearfix">
+                <h1 class="logo">
+                <a href="#" title="小u商城"></a>
+                <p><span></span><a href="#">欢迎登陆</a></p>
+                </h1> 
+            </div>
+        </div>
+        <div class="wrop">
+            <div class="inner">
+             <form action="javascript:;">
+                 <h2>登陆</h2>
+                <h4 class="h4">
+                    <p class="p1"><span class="iconfont icon-xinfeng"></span></p><input type="text" placeholder="手机号/会员名/邮箱" name="uname">
+                </h4>
+                <h4 class="mima">
+                    <p class="p2"><span class="iconfont icon-suo"></span></p><input type="password" placeholder="密码" name="pwd">
+                </h4>
+                <h4 class="pas">
+                    <input type="text" placeholder="验证码" name="code"><img src="http://localhost:4005/user/captcha" id="i">
+                </h4>
+                <button id="log">登陆</button>
+                <p class="chec">
+                    <input type="checkbox" checked>自动登陆
+                    <span class="fr">忘记密码？</span>
+                </p>
+                <p class="fot">
+                    <span class="qq"></span><a href="#" class="a1">qq</a> 
+                    <span class="xb"></span><a href="#" class="a1">微博</a> 
+                    <span class="xy"></span><a href="#" class="a1">微信</a>
+                    <a href="register.html" target="_blank" class="reg">立即注册</a>
+                </p>
+            </form>
+            </div>
+           
+        </div>
+        <div class="di">
+        <p>Copyright @ 2010~2016 小U商城 版权所有 保留一切权利</p>
+        <p>京ICP备10218183号 京ICP证1611886号 京公网安备11010802020593号 出版物经营许可证新出发京批字第直130052号</p>
+        </div>
+        <script>
+            $("#i").click(function(){
+                this.src=`http://localhost:4005/user/captcha?id=${new Date().getTime()}`
+                // ${new Date().getTime()}利用时间戳让其id值实时的发生变化
+            })
+            $("#log").click(function(){
+                $.ajax({
+                type:"post",
+                url:"http://localhost:4005/user/login",
+                data:{
+                    uname:$("[name=uname").val(),
+                    pwd:$("[name=pwd]").val(),
+                    code:$("[name=code]").val()
+                    // 向后端传入val的值
+                },
+                xhrFields:{
+                     //允许携带session进入
+                     withCredentials: true
+                },
+                success:function(response){
+                    if(response.code){
+                        alert(response.msg)
+                    }else{
+                        location.href='./index.html'
+                    }
+                }
+            })
+        })
+        </script>
+<!-- <script>
+    //用户名
+    var pat=/^[a-zA-Z]/
+    var pat1=/[0-9a-zA-Z]{4,10}/
+    $(":text:first").blur(tex)
+    function tex(){
+       var tx_value=$(":text:first").val()
+       if(tx_value==""){
+        $(".h4").append("<span style='font-size:12px'>不能为空</span>")
+        return false
+       }else if(pat.exec(tx_value)==null){
+        $(".h4").append("<span style='font-size:12px'>首位是字母</span>")
+        return false
+       }else if(pat1.exec(tx_value)==null){
+        $(".h4").append("<span style='font-size:12px'>长度不超过10，数字字母结合</span>")
+        return false
+       }else{
+        $(".h4").append("<span style='font-size:12px'></span>")
+       }
+       return true
+    }
+    //密码框
+    var pat2=/[0-9a-zA-Z]{6,12}/
+    $(":password").blur(pas)
+    function pas(){
+        var pas_value=$(":password").val()
+        if(pas_value==""){
+            $(".mima").append("<span style='font-size:12px'>不能是空</span>")
+            return false
+        }else if(pat2.exec(pas_value)==null){
+            $(".mima").append("<span style='font-size:12px'>长度6-12</span>")
+            return false
+        }else{
+            $(".mima").append("<span style='font-size:12px'></span>")
+        }
+        return true
+    }
+    // 验证码
+    // var random=""
+    // function yan(max,min){
+    //    return Math.floor(Math.random()*(max-min))+min
+    // }
+    // $("#i").click(function(){
+    //     random=yan(1000,9999);
+    //     $("#i").text(random)
+    // })
+    // $("#i").text(yan(1000,9999));
+    // function yan1(){
+    //     var yan1_value=$(":text:last").val()
+    //     if(yan1_value!=$("#i").text()){
+    //         $(".pas").append("<br><span style='font-size:12px'>验证码不正确</span>")
+    //         return false
+    //     }else{
+    //         $(".pas").append("<span style='font-size:12px'></span>")
+    //     }
+    //     return true
+    // }
+    // 验证码
+   $("#i").click(function(){
+     this.src="http://localhost:2500/sv?id=".concat(new Date().getTime())
+   })
+   
+    $("button").click(function(){
+        if(tex() && pas() && yan1()){
+            alert("登录成功")
+            return true
+        }else{
+            return false
+        }
+    })
+</script> -->
+</body>
+</html>

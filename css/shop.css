@@ -1,0 +1,260 @@
+@charset "utf-8";
+body{
+    background-color: #fff;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.shop-head {
+    height: 36px;
+    background-color: #f7f7f7;
+}
+/* 文本框 */
+.shop-nav{
+    border-top: 1px solid #e7e7e7;
+    height: 122px;
+}
+.wrop-head .logo{
+    height: 108px;
+    line-height: 108px;
+}
+.wrop-head .logo>a {
+    display: block;
+    width: 209px;
+    height: 56px;
+    background: url("../img/log_03.png") no-repeat;
+    float: left;
+    margin-top: 30px;
+}
+.wrop-head .logo>p{
+    float: left;
+    font-size: 24px;
+}
+.wrop-head  .logo p a{
+    vertical-align: middle;
+    color: #5d5d5d;
+}
+.wrop-head  .logo p span{
+    margin: 0 22px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 48px;
+    background-color: #e8e8e8;
+    margin-top: 14px;
+}
+.wrop-head-right{
+    position: relative;
+    margin-top: 41px;
+}
+.wrop-head-right input{
+    width: 361px;
+    height: 35px;
+    line-height: 35px;
+    color: #a2a2a2;
+    padding-left: 44px;
+    border: 2px solid #f76915;
+}
+.wrop-head-right span{
+    display: block;
+    position: absolute;
+    left: 13px;
+    top: 10px;
+    font-size: 22px;
+    color: #f76915;
+}
+.wrop-head-right button{
+    width: 75px;
+    height: 39px;
+    background-color: #f76915;
+    border: 2px solid #f76915;
+}
+/* 购物车部分 */
+.shopping{
+    height: 726px;
+    width: 100%;
+}
+.shopping table{
+    margin-top: 24px;
+    border-collapse: collapse;
+}
+.shopping table thead{
+    border: 1px solid #dcdcdc;
+}
+.shopping table th{
+    height: 41px;
+    font-size: 12px;
+    color: #5a5a5a;
+    background-color: #f5f5f5;
+}
+.shopping table .th1{
+    width: 157px;
+}
+.shopping table .th2{
+    width: 301px;
+}
+.shopping table .th3{
+    width: 177px;
+}
+.shopping table .th4{
+    width: 214px;
+}
+.shopping table .th5{
+    width: 170px;
+}
+.shopping table .th6{
+    width: 177px;
+}
+.shopping .one input{
+    margin-top: -100px;
+    margin-left: 23px;
+}
+.shopping .one .phone{
+    display: inline-block;
+}
+.shopping  .one .phone span{
+    color: #8d8d8d;
+}
+.shopping .one .phone .infor{
+    margin-top: 22px;
+}
+.shopping   .one .phone .xing{
+    margin-left: 24px;
+    padding-top: 10px;
+}
+.shopping  .one{
+    border-bottom: 1px solid #e3e3e3;
+    height: 111px;
+}
+.shopping .one p{
+    font-size: 12px;
+    color: #343434;
+}
+.shopping  .one img{
+    margin-left: 29px;
+    margin-right: 20px;
+}
+.shopping .two{
+    text-align: center;
+    color: #2d2d2d;
+    font-size: 12px;
+}
+.shopping .three{
+    text-align: center;
+}
+.shopping .three a{
+    display: inline-block;
+}
+.shopping .three .jia1{
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    vertical-align: middle;
+}
+.shopping .three .jia{
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    vertical-align: middle;
+}
+.shopping .three .kong{
+    display: inline-block;
+    width: 43px;
+    height: 28px;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    vertical-align: middle;
+}
+.shopping .four{
+    text-align: center;
+    color: #f35e0c;
+    font-size: 12px;
+}
+.shopping .five{
+    font-size: 12px;
+    text-align: center;
+}
+.shopping .five .del a{
+    text-decoration: underline;
+    color: #d5732a;
+}
+.shopping .five .move{
+    margin-top: 12px;
+}
+.shopping .tr-one{
+    background-color: #fef9f6;
+}
+.shopping .tr-two input[type=checkbox]:checked::after {
+    content: "✔";
+    color: #ed6f0b;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.shopping .tr-two input[type=checkbox]::after{
+    background-color:#fff ;
+    border: 1px solid #ed6f0b;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    display:block;
+}
+.shopping .six{
+    height: 39px;
+    background-color: #fff;
+}
+.shopping tfoot tr{
+    color: #606060;
+    font-size: 12px;
+    height: 97px;
+    background-color: #f9f9f9;
+}
+.shopping tfoot a{
+    color: #d47940;
+    font-size: 12px;
+    margin-left: 30px;
+}
+.shopping tfoot .quan{
+    height:28px ;
+    line-height: 28px;
+}
+.shopping  input{
+    margin-left: 24px;
+    vertical-align: middle;
+}
+.shopping tfoot .yj p{
+    height:28px ;
+    line-height: 28px;
+}
+.shopping tfoot .yj .one-1{
+    color: #d86816;
+    font-weight: bold;
+}
+.shopping tfoot .and .miller{
+    color: #d86816;
+    font-size: 14px;
+}
+.shopping tfoot .and p{
+    height: 24px;
+    line-height: 24px;
+}
+.shopping button{
+    margin-top: 26px;
+}
+.shopping .button1{
+    width: 184px;
+    height: 46px;
+    color:#f46a11;
+    font-size: 16px;
+    border: 1px solid #f46a11;
+}
+.shopping .button2{
+    width: 186px;
+    height: 46px;
+    background-color:#f46a11;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #f46a11;
+    margin-left: 22px;
+}

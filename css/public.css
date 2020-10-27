@@ -1,0 +1,254 @@
+@charset "utf-8";
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+   background-color: #f5f5f5;
+}
+/* 登录条*/
+.login{
+    height: 36px;
+    line-height: 36px;
+}
+/* 左侧登录条 */
+.login .login-left{
+    margin-left: 8px;
+}
+.login .login-left p{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 10px;
+    color: #60615c;
+}
+.login .login-left p span{
+    vertical-align: middle;
+    margin-left: 2px;
+}
+.login .login-left p .sp1{
+    color: #fd9407;
+    margin-right: 3px;
+    font-size: 20px;
+}
+/* 右侧登录条 */
+.login .login-right{
+    margin-right: 10px;
+}
+.login .login-right p span{
+    vertical-align: middle;
+    margin-left: 2px;
+}
+.login .login-right p{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 10px;
+    color: #60615c;
+}
+.login .login-right p .sp2{
+    margin-right: 4px;  
+    color: #f26600;
+    font-size: 16px;
+}
+.gs1{
+    color: #f26600;
+}
+
+/* 中间搜索区域及分类 */
+.connter-nav{
+    border-top:1px solid #f3f3f3 ;
+    position: relative;
+    height: 160px;
+    background-color: white;
+}
+/* 上边区域名称和区域文本框 */
+.connter-nav .nav-top h2{
+    display: inline-block;
+    margin: 35px 0px 35px 0px;
+    font-size: 40px;
+    color: #303030;
+}
+.connter-nav .nav-top h2 span{
+    color: #ed6f18;
+}
+.connter-nav .nav-top h2 img{
+    vertical-align: middle;
+}
+.connter-nav .nav-top .input{
+    display: inline-block; 
+    margin-left: 164px;
+    position: relative;
+    top: -10px;
+}
+.connter-nav .nav-top  .input input{
+    width:390px;
+    height: 36px;
+    line-height: 36px;
+    border: 2px solid #ed6d16;
+    color: #b2a9aa;
+    padding-left: 28px;
+}
+.connter-nav .nav-top .input button{
+    width: 116px;
+    height: 40px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #fff9fd;
+    border: 2px solid #ed6d16;
+    background-color: #ed6d16;
+}
+.connter-nav .nav-top .input span{
+    position: absolute;
+    top:12px;
+    left:10px;
+}
+.connter-nav .nav-top p{
+    margin-left: 360px;
+    margin-top: -25px;
+    color: #9a9494;
+    font-size: 11px;
+}
+.connter-nav .nav-top p a{
+    border-right: 1px solid #9a9494;
+    padding:0px 10px;
+}
+.connter-nav .nav-top p a:last-child{
+    border-right: 0px;
+}
+.connter-nav .nav-top p a:hover{
+    color: #ef5b00;
+}
+/*下边区域导航及区域分类  */
+.connter-nav .nav-bottom .menu{
+    position: absolute;
+    bottom: 0px;
+    width: 182px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f26b11;
+    font-size: 14px;
+    color: #f7ffff;
+    padding-left: 8px;
+}
+.connter-nav .nav-bottom .menu span{
+    margin-right: 6px;
+}
+.connter-nav .nav-bottom .menu a{
+    font-size: 14px;
+    color: #f7ffff;
+}
+.connter-nav .nav-bottom .menu:hover .menv-nav{
+    display: block;
+}
+/* 精细导航栏 */
+.connter-nav .nav-bottom .menu .menv-nav{
+    width: 190px;
+    height: 484px;
+    background-color: #2c2d25;
+    position: relative;
+    left: -8px;
+    display: none;
+    z-index: 2;
+    overflow: hidden;
+}
+.connter-nav .nav-bottom .menu .menv-nav a{
+    display: inline-block;
+    color: #ddfffb;
+    margin-right: 2px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 5px; 
+}
+
+.connter-nav .nav-bottom .nav-font{
+    position: relative;
+    left: 204px;
+    bottom: -15px;
+}
+.connter-nav .nav-bottom .nav-font a{
+    color: #252928;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 26px;
+}
+/*  中间搜索区域完成  */
+/* 底部部分 */
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: #333333;
+}
+.footer .dl-1{
+    margin-left: 176px;
+}
+.footer .dl-1  dd a{
+    color: #949494;
+    font-size: 14px;
+}
+.footer .dl-1 dt a{
+    color: #949494;
+    font-size: 18px;
+}
+.footer .dl-1 dt{
+    padding-top: 34px;
+}
+.footer .dl-1 dd{
+    margin-top: 23px;
+}
+/* .footer .dl-2{
+    margin-left: 100px;
+    margin-bottom: 30px;
+} */
+.footer .d-one{
+    margin-left: 128px;
+    margin-right: 108px;
+}
+.footer .d-two{
+    margin-right: 107px;
+}
+.footer .d-three{
+    margin-right: 121px;
+}
+.footer .d-four{
+    margin-right: 152px;
+}
+.footer .dl-2 dt a{
+    color: #949494;
+    font-size: 18px;
+}
+.footer .dl-2  dd a{
+    color: #949494;
+    font-size: 14px;
+}
+.footer .dl-2 dt{
+    padding-top: 34px;
+}
+.footer .dl-2 dd{
+    margin-top: 18px;
+}
+.footer .dl-2{
+    margin-bottom: 30px;
+}
+.footer p{
+    text-align: center;
+    font-size:12px ;
+    height: 27px;
+    line-height: 27px;
+    color: #6b6b6b;
+}
+.footer .p1{
+    margin-top: 32px;
+}
+/* 置顶图标 */
+.zhiding{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background: rosybrown;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    color: white;
+    padding:0px 5px;
+    display: none;
+}
